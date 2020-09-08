@@ -11,7 +11,7 @@ cada uno se puede levantar al ingresar a la carpeta, instalar los modulos npm in
 
 #### Ingresar a la UI
 
-Para Cliente localhost:3000 Para Restaurante localhost:3100 Para Repartidor localhost:3200
+Para Cliente localhost:3000 Para Restaurante localhost:3100 Para Repartidor localhost:3200, el orquestador esta en el puerto 3400 pero ya que solo es como intermediario no es necesario ingresar a alguna UI
 
 Como caso Alternativo se tiene la rama SOA_PR4
 

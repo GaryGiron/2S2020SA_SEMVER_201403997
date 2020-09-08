@@ -1,0 +1,24 @@
+{
+  "name": "practica5_sa",
+  "version": "1.0.0",
+  "description": "TengoHambreApp definida por aplicacion de cliente, restaurante y repartidor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GaryGiron/2S2020SA_SEMVER_201403997.git"
+  },
+  "author": "Gary Giron",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GaryGiron/2S2020SA_SEMVER_201403997/issues"
+  },
+  "homepage": "https://github.com/GaryGiron/2S2020SA_SEMVER_201403997#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-util": "^3.0.8",
+    "gulp-zip": "^5.0.2"
+  }
+}

@@ -15,3 +15,4 @@ Para Cliente localhost:3000 Para Restaurante localhost:3100 Para Repartidor loca
 
 Como caso Alternativo se tiene la rama SOA_PR4
 
+Dentro de la carpeta video_practica_6 esta el video de Sonar.

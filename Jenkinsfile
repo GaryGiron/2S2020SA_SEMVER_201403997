@@ -10,7 +10,7 @@ pipeline {
             steps {
                 dir('C:/Users/Gary/Documents/2S 2020/SA/lab/Practica7_SA'){
                     echo 'Testing..'
-                    bat 'mocha test'
+                    bat 'npm test'
                 }
             }
         }

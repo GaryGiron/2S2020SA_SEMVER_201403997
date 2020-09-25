@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                cd "C:\Users\Gary\Documents\2S 2020\SA\lab\Practica7_SA"
+                cd "C:\\Users\\Gary\\Documents\\2S 2020\\SA\\lab\\Practica7_SA"
                 sh "npm install"
             }
         }

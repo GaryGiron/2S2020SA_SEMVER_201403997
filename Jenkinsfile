@@ -13,7 +13,7 @@ pipeline {
                 bat 'npm install -g mocha --save-dev'
                 bat 'cd node_modules'
                 bat 'cd mocha'
-                bat 'mocha ..\..\test'
+                bat 'mocha ../../test'
             }
         }
         stage('Deploy') {

@@ -9,7 +9,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-                sh "cd C:\\Users\\Gary\\Documents\\2S 2020\\SA\\lab\\Practica7_SA & npm install & npm test"
+                sh "npm test"
             }
         }
         stage('Deploy') {

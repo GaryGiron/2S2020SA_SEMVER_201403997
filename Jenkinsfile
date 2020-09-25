@@ -11,7 +11,7 @@ pipeline {
                 echo 'Testing..'
                 bat 'npm install'
                 bat 'npm install -g mocha --save-dev'
-                bat 'mocha test'
+                bat 'cd node_modules\\mocha & mocha ..\..\test'
             }
         }
         stage('Deploy') {

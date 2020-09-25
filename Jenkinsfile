@@ -10,6 +10,7 @@ pipeline {
             steps {
                 echo 'Testing..'
                 bat 'npm install'
+                bat 'npm install mocha -g'
                 bat 'npm test'
             }
         }

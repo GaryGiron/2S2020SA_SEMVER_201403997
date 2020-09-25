@@ -1,2 +1,6 @@
 /node_modules
+/src/cliente/node_modules
+/src/restaurante/node_modules
+/src/repartidor/node_modules
+/src/orquestador/node_modules
 /dist

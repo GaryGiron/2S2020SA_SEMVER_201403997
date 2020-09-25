@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "TengoHambreApp definida por aplicacion de cliente, restaurante y repartidor",
   "main": "index.js",
-  "scripts": {
-    "test": "./node_modules/.bin/mocha test"
-  },
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GaryGiron/2S2020SA_SEMVER_201403997.git"

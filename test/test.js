@@ -3,6 +3,10 @@ chai.use(chaiHttp);
 var app = 'localhost:3400';
 var expect  = require("chai").expect;
 var request = require('superagent');
+var assert = require('assert');
+var cash = require('../cash.js');
+const { type } = require('os');
+
 
 /*describe("Sample Unit Testing 1", function() {
     describe("Data of  new user", function() {
@@ -20,6 +24,29 @@ var request = require('superagent');
         });
     });
 });*/
+
+describe('Module Cash', function(){
+    it('Should have a getChange Method', function(done){
+        assert.equal(typeof cash, 'object');
+        assert.equal(typeof cash.getChange, 'function');
+        done();
+    });
+
+    it('Should getChange(210,300) equal', function(){
+        assert.deepEqual(cash.getChange(210,300),[50,25,10,5]);
+    });
+    it('Should getChange(406,1000) equal', function(){
+        assert.deepEqual(cash.getChange(406,1000),[500,50,25,10,5,1,1,1,1]);
+    });
+    it('Should getChange(1487,10000) equal', function(){
+        assert.deepEqual(cash.getChange(1487,10000),[5000,2000,1000,500,10,1,1,1]);
+    });
+    it('Should getChange(random,str) equal', function(){
+        assert.deepEqual(cash.getChange("random","str"),[]);
+    });
+
+});
+
 
 describe("Prueba Unitaria 1", function() {
     it("Creacion de un pedido", function(done) {

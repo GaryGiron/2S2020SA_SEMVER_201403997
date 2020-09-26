@@ -4,3 +4,5 @@
 /src/repartidor/node_modules
 /src/orquestador/node_modules
 /dist
+/.scannerwork/css-bundle/node_modules
+/.scannerwork/css-bundle/package/node_modules

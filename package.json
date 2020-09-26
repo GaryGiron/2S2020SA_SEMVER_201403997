@@ -4,7 +4,8 @@
   "description": "TengoHambreApp definida por aplicacion de cliente, restaurante y repartidor",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter mocha-sonarqube-reporter test --reporter-options output=test-report.xml"
+    "test": "nyc ./node_modules/.bin/mocha test",
+    "coverage": "nyc --reporter=lcov --reporter=text-lcov npm test"
   },
   "repository": {
     "type": "git",
@@ -38,8 +39,10 @@
     }
   },
   "devDependencies": {
+    "istanbul": "^0.4.5",
     "jest-sonar-reporter": "^2.0.0",
     "karma-junit-reporter": "^2.0.1",
-    "mocha-sonarqube-reporter": "^1.0.1"
+    "mocha-sonarqube-reporter": "^1.0.1",
+    "nyc": "^15.1.0"
   }
 }

@@ -1,11 +1,6 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
-            steps {
-                echo 'Building..'
-            }
-        }
         stage('Test') {
             steps {
                 dir('C:/Users/Gary/Documents/2S 2020/SA/lab/Practica7_SA'){
@@ -22,9 +17,31 @@ pipeline {
                 }
             }
         }
+        stage('Build') {
+            steps {
+                dir('C:/Users/Gary/Documents/2S 2020/SA/lab/Practica7_SA'){
+                    echo 'Building..'
+                    bat 'gulp'
+                }
+            }
+        }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                dir('C:/Users/Gary/Documents/2S 2020/SA/lab/Practica7_SA'){
+                    echo 'Deploying....'
+                    bat """
+                        cd ../
+                        call git clone https://github.com/GaryGiron/2S2020SA_artefactosApp.git
+                        COPY C:\Users\Gary\Documents\2S 2020\SA\lab\Practica7_SA\dist\app.zip dist
+                        cd dist
+                        call git add .
+                        call git config user.email "gsteph393@gmail.com"
+                        call git config user.name "GaryGiron"
+                        call git commit -m "Nuevos artefactos"
+                        call git push origin master
+                    """
+                }
+                
             }
         }
     }

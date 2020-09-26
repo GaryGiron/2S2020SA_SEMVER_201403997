@@ -20,8 +20,10 @@ pipeline {
         stage('Build') {
             steps {
                 dir('C:/Users/Gary/Documents/2S 2020/SA/lab/Practica7_SA'){
-                    echo 'Building..'
-                    bat 'gulp'
+                    bat """
+                        echo 'Building..'
+                        call gulp
+                    """
                 }
             }
         }

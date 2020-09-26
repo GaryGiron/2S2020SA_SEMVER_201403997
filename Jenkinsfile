@@ -21,8 +21,9 @@ pipeline {
             steps {
                 dir('C:/Users/Gary/Documents/2S 2020/SA/lab/Practica7_SA'){
                     echo 'Building..'
-                    bat 'npm install -g gulp'
-                    bat 'gulp zipper'
+                    bat """
+                        call ${GULP}
+                    """
                 }
             }
         }

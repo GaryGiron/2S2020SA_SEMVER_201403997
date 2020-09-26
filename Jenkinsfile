@@ -34,7 +34,7 @@ pipeline {
                     bat """
                         cd ..
                         call git clone https://github.com/GaryGiron/2S2020SA_artefactosApp.git
-                        cp Practica7_SA\\dist\\app.zip 2S2020SA_artefactosApp
+                        copy Practica7_SA\\dist\\app.zip 2S2020SA_artefactosApp
                         cd 2S2020SA_artefactosApp
                         call git add .
                         call git config user.email "gsteph393@gmail.com"

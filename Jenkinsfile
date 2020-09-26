@@ -22,7 +22,8 @@ pipeline {
                 dir('C:/Users/Gary/Documents/2S 2020/SA/lab/Practica7_SA'){
                     echo 'Building..'
                     bat """
-                        call ${GULP}
+                        cd C:/Users/Gary/Documents/2S 2020/SA/lab/Practica7_SA
+                        call gulp
                     """
                 }
             }

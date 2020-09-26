@@ -16,3 +16,7 @@ Para Cliente localhost:3000 Para Restaurante localhost:3100 Para Repartidor loca
 Como caso Alternativo se tiene la rama SOA_PR4
 
 Dentro de la carpeta video_practica_6 esta el video de Sonar.
+
+##Descarga
+Para descargar los artefatos en un archivo comprimido generado por Jenkins puede realizarlo por medio de la ruta:
+https://github.com/GaryGiron/2S2020SA_artefactosApp

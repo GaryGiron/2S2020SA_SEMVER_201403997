@@ -30,7 +30,7 @@ pipeline {
                 dir('C:/Users/Gary/Documents/2S 2020/SA/lab/Practica7_SA'){
                     echo 'Deploying....'
                     bat """
-                        cd ../
+                        cd ..
                         call git clone https://github.com/GaryGiron/2S2020SA_artefactosApp.git
                         COPY C:\Users\Gary\Documents\2S 2020\SA\lab\Practica7_SA\dist\app.zip dist
                         cd dist
